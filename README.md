@@ -8,36 +8,62 @@
 
 This component must work in react app and it was bootstrapped with  [Create React App](https://github.com/facebook/create-react-app).
 
+## Install module
+
+With npm :
+```
+npm install dw-react-modal
+```
+or
+With yarn :
+```
+yarn add dw-react-modal
+```
 
 ## How to use dw-react-modal component :
 
-#### First, you must add the following elements :
-- state hook with useState
+1. Before the render, you must add the following elements :
+- a state hook with useState
+- a close function
+
+2. In the render, add where you want the module
+
+For example:
 ```
-const [modal, setModal]= useState(false)
+export default function YourApp() {
+  const [ modal, setModal ] = useState(false)
+  const closeModal = () => { setModal(!modal) }
+
+  return (
+    <Modal
+      state={modal}
+      config={{}}
+      close={closeModal}
+    >
+      {/* here, html elements in the modal */}
+    </Modal>
+  )
+}
 ```
 
-- close function :
-```
-const closeModal = () => {setModal(!modal)}
-```
-
-
-#### Last, in your render, add where you want the following code :
-
-```
-<Modal state={modal} config={{}} close={closeModal}>
-  here, html elements in the modal
-</Modal>
-```
 ## Props
 #### required props
-`state={modal}` : is the open or close status of the modal (refers to state hook)
+`state={modal}` : this is the open or close status of the modal (refers to state hook)
 
 `close={closeModal}` (refers to close function)
 
 #### Optional extras
-`config={{}}` : change the object to configure style (ex : {backgroundColor : "#FFF", color:"#333333"}). It's possible to change : backgroundColor, borderRadius, width, height, justifyContent, alignItems, color, fontWeight, fontSize.
+`config={{}}` : change the object to configure style (ex : `{backgroundColor : "#FFF", color:"#333333"}` ).
+It's possible to change :
+- alignItems
+- backgroundColor
+- borderRadius
+- color
+- fontSize
+- fontWeight
+- height
+- justifyContent
+- width
 
 
 ## Supports
