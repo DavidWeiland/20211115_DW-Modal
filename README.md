@@ -9,13 +9,13 @@
 This component must work in react app and it was bootstrapped with  [Create React App](https://github.com/facebook/create-react-app).
 
 ## Install module
+In your own react project :
 
-With npm :
+install with npm :
 ```
 npm install dw-react-modal
 ```
-or
-With yarn :
+or, with yarn :
 ```
 yarn add dw-react-modal
 ```
