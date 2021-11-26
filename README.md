@@ -53,8 +53,8 @@ export default function YourApp() {
 `close={closeModal}` (refers to close function)
 
 #### Optional extras
-`config={{}}` : change the object to configure style (ex : `{backgroundColor : "#FFF", color:"#333333"}` ).
-It's possible to change :
+`config={{}}` : to configure style :
+
 - alignItems
 - backgroundColor
 - borderRadius
@@ -64,6 +64,16 @@ It's possible to change :
 - height
 - justifyContent
 - width
+
+example :
+```
+config = {
+  {
+    backgroundColor : "#FFF",
+    color:"#333333"
+  }
+}
+```
 
 
 ## Supports
