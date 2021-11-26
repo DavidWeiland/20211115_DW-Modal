@@ -1,6 +1,6 @@
 {
   "name": "dw-react-modal",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "private": false,
   "author": "David Weiland <weiland.david@icloud.com>",
   "homepage": "https://github.com/DavidWeiland/DW-Modal",
@@ -29,7 +29,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "publish:npm": "rm -fr dist && mkdir dist && babel src/Components/DW-react-Modal -d dist --copy-files"
+    "publish:npm": "rm -fr dist && mkdir dist && babel src -d dist --copy-files"
   },
   "eslintConfig": {
     "extends": [

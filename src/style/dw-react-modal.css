@@ -43,7 +43,7 @@
 
 .DW-Modale-Wrapper--Close{
   box-sizing: border-box;
-  background: url('../icon/times.svg') no-repeat center center / 70% 70% #333333;
+  background: url('../assets/icon/times.svg') no-repeat center center / 70% 70% #333333;
   border-radius:50%;
   width : 30px;
   height : 30px;

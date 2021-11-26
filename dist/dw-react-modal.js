@@ -1,4 +1,4 @@
-import './css/DW-Modal.css';
+import './style/dw-react-modal.css';
 import React from 'react';
 export default function Modal({
   state,
