@@ -1,4 +1,6 @@
 import './css/DW-Modal.css';
+import React from 'react';
+
 export default function Modal({
   state,
   config,
