@@ -1,70 +1,46 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![shields](https://img.shields.io/badge/version-v1.1.0-blue)
+![shields](https://img.shields.io/badge/make_with-React_in_create--react--app-red)
+![shields](https://img.shields.io/badge/author-David_Weiland-green)
 
-## Available Scripts
+# DW-REACT-MODAL
+## Composant React personnel
 
-In the project directory, you can run:
+This component must work in react app and it was bootstrapped with  [Create React App](https://github.com/facebook/create-react-app).
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## How to use dw-react-modal component :
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+#### First, you must add the following elements :
+- state hook with useState
+```
+const [modal, setModal]= useState(false)
+```
 
-### `yarn test`
+- close function :
+```
+const closeModal = () => {setModal(!modal)}
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+#### Last, in your render, add where you want the following code :
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+<Modal state={modal} config={{}} close={closeModal}>
+  here, html elements in the modal
+</Modal>
+```
+## Props
+#### required props
+`state={modal}` : is the open or close status of the modal (refers to state hook)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+`close={closeModal}` (refers to close function)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Optional extras
+`config={{}}` : change the object to configure style (ex : {backgroundColor : "#FFF", color:"#333333"}). It's possible to change : backgroundColor, borderRadius, width, height, justifyContent, alignItems, color, fontWeight, fontSize.
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Supports
+Homepage of the module : [https://github.com/DavidWeiland/DW-Modal](https://github.com/DavidWeiland/DW-Modal)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Please report bugs in : [https://github.com/DavidWeiland/DW-Modal.git/issues](https://github.com/DavidWeiland/DW-Modal.git/issues)
