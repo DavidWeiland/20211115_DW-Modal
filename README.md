@@ -20,6 +20,8 @@ or, with yarn :
 yarn add dw-react-modal
 ```
 
+Here the link to [dw-react-modal](https://www.npmjs.com/package/dw-react-modal) published on npmjs.
+
 ## How to use dw-react-modal component :
 
 1. Before the render, you must add the following elements :
