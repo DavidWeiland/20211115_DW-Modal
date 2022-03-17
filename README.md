@@ -13,7 +13,7 @@ In your own react project :
 
 install with npm :
 ```
-npm install dw-react-modal
+npm install --save dw-react-modal
 ```
 or, with yarn :
 ```
