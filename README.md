@@ -24,17 +24,21 @@ Here the link to [dw-react-modal](https://www.npmjs.com/package/dw-react-modal) 
 
 ## How to use dw-react-modal component :
 
-1. Before the render, you must add the following elements :
+1. First, import "Modal from "dw-react-modal/dist/dw-react-modal" 
+
+2. In the function component, before the render, you must add the following elements :
 - a state hook with useState
 - a close function
 
-2. In the render, add where you want the module
+3. In the render, add where you want the module
 
 For example:
 ```
 export default function YourApp() {
   const [ modal, setModal ] = useState(false)
-  const closeModal = () => { setModal(!modal) }
+  const closeModal = () => {
+    setModal(!modal)
+  }
 
   return (
     <Modal
